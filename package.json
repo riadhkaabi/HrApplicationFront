@@ -2,7 +2,8 @@
   "name": "BertschInnovationMobileApp",
   "version": "0.0.1",
   "engines": {
-    "node": "14.15.5"
+    "node": "14.15.5",
+    "ionic": "^5.4.16"
   },
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
