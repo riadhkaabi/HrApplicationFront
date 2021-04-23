@@ -5,7 +5,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import * as firebase from 'firebase/app';
 import { switchMap, map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
-import { User } from '../Entities/user';
+import { User } from '../Entities/User';
 import { AppSettings } from '../Settings/AppSettings';
 
 export interface Message {

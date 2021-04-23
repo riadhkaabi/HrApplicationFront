@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { AlertController, IonRouterOutlet, IonSearchbar, ModalController, ToastController } from '@ionic/angular';
 import { AddUserComponent } from '../add-user/add-user.component';
-import { User } from '../Entities/user';
 import { SendTokenComponent } from '../send-token/send-token.component';
 import { EmployeeService } from '../Services/employee.service';
 import { SharedService } from '../Services/shared.service';

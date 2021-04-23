@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AlertController, LoadingController } from '@ionic/angular';
-import { User } from '../Entities/user';
 import { ChatService } from '../Services/chat.service';
 import { UserService } from '../Services/user.service';
 //import{ Deeplinks } from '@ionic-native/deeplinks/ngx'

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AlertController, ToastController, ModalController, LoadingController } from '@ionic/angular';
-import { User } from '../Entities/user';
+import { User } from '../Entities/User';
 import { ChatService } from '../Services/chat.service';
 import { UserService } from '../Services/user.service';
 

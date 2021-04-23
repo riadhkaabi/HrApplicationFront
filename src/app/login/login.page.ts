@@ -4,13 +4,12 @@ import { AuthenticationService } from '../Services/authentication.service';
 import { UserService } from '../Services/user.service';
 import { AppSettings } from '../Settings/AppSettings';
 import { FormGroup, FormControl } from '@angular/forms';
-import { Role } from '../Entities/role';
+import { Role } from '../Entities/Role';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore } from '@angular/fire/firestore';
 import * as firebase from 'firebase/app'
 import { Observable } from 'rxjs';
-import { User } from '../Entities/user';
 import { switchMap, map } from 'rxjs/operators';
 import { AlertController, LoadingController } from '@ionic/angular';
 import { ChatService } from '../Services/chat.service';
