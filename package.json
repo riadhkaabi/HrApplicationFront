@@ -16,8 +16,8 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "^11.0.4",
-    "ionic": "5.4.16",
+    "@ionic/app-scripts": "2.1.4",
+    "typescript": "2.3.4",
     "@angular/common": "~11.0.4",
     "@angular/core": "~11.0.4",
     "@angular/fire": "^6.1.4",
@@ -27,7 +27,6 @@
     "@angular/router": "~11.0.4",
     "@capacitor/android": "^2.4.6",
     "@capacitor/ios": "^2.4.6",
-    "@ionic/app-scripts": "3.2.1",
     "@ionic-native/camera": "^5.31.1",
     "@ionic-native/core": "^5.0.0",
     "@ionic-native/deeplinks": "^5.31.1",
