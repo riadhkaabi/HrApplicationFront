@@ -7,7 +7,6 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { SharedService } from "../Services/shared.service";
 import { AppSettings } from "../Settings/AppSettings";
 import { ModalController, ToastController } from "@ionic/angular";
-import "jspdf-autotable";
 import { QrattendancePage } from "../qrattendance/qrattendance.page";
 
 @Component({
@@ -268,41 +267,6 @@ export class DashboardPage implements OnInit {
       console.log(this.employeesList);
     });
   }
-
-  /*exportPdf() {
-   this.dateFrom = new Date(this.statDateForm.value.fromDate)
-     this.dateTo = new Date(this.statDateForm.value.toDate)
-    
-     var event = new Date(this.dateFrom);
-     let customDateFrom = JSON.stringify(event)
-     customDateFrom = customDateFrom.slice(1,11)
-
-     var event2 = new Date(this.dateTo)
-     let customDateTo = JSON.stringify(event2)
-     customDateTo = customDateTo.slice(1,11)
-
-    const from:string = customDateFrom
-    const to:string = customDateTo
-    this.statService.getAll(from, to).subscribe((data: any) => {
-    this.stat = data.map(d => d.body).sort();
-     console.log('stat', this.stat) ; }
-  );
-  import('jspdf').then(jsPDF => {
-      import('jspdf-autotable').then(x => {
-          const doc = new jsPDF.default('l', 'mm', [305, 250]);
-
-          const header = function (data) {
-              doc.setFontSize(18);
-              doc.setTextColor(40);
-              doc.setFont('normal');
-              doc.text('Statistical Report ' + 'from: ' + from + ' to: ' + to, data.settings.margin.left, 50);
-          };
-          //@ts-ignore
-          doc.autoTable(this.exportColumns, this.stat, {margin: {top: 60}, didDrawPage: header} );
-          doc.save('StatisticalReport.pdf');
-      });
-  });
-}*/
 
 getWorkTime(){
   this.attendanceSerice.getWorkTime().subscribe(data =>{
