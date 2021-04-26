@@ -2,17 +2,13 @@ import {Component, ElementRef,OnInit,ViewChild,Input,Inject,} from "@angular/cor
 import { AttendanceService } from "../Services/attendance.service";
 import { EmployeeService } from "../Services/employee.service";
 import { StatServiceService } from "../Services/stat-service.service";
-import { UserService } from "../Services/user.service";
 import { Chart } from "chart.js";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { SharedService } from "../Services/shared.service";
-import { element } from "protractor";
 import { AppSettings } from "../Settings/AppSettings";
 import { ModalController, ToastController } from "@ionic/angular";
-import { autoTable } from "jspdf-autotable";
 import "jspdf-autotable";
 import { QrattendancePage } from "../qrattendance/qrattendance.page";
-declare let jsPDF;
 
 @Component({
   selector: "app-dashboard",
