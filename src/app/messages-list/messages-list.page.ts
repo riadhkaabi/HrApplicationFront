@@ -6,7 +6,6 @@ import { ChatService } from '../Services/chat.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '../Services/user.service';
 import { AppSettings } from '../Settings/AppSettings';
-import { ElementArrayFinder } from 'protractor';
 
 @Component({
   selector: 'app-messages-list',

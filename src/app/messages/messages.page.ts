@@ -6,7 +6,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { AppSettings } from '../Settings/AppSettings';
 import * as firebase from 'firebase';
 import { UserService } from '../Services/user.service';
-import { element } from 'protractor';
  
 @Component({
   selector: 'app-chat',
